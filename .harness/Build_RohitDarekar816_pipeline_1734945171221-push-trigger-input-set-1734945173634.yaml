@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_RohitDarekar816_pipeline_1734945171221-push-trigger-input-set
+  identifier: Build_RohitDarekar816_pipeline_1734945171221pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_RohitDarekar816_pipeline_1734945171221
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
