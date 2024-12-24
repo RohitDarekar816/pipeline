@@ -63,5 +63,5 @@ pipeline:
                   spec:
                     shell: Sh
                     command: |-
-                      sudo shh root@147.182.192.109
+                      sudo ssh root@147.182.192.109
                       iamindian@1Iamindian
