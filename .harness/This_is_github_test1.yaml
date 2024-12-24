@@ -62,4 +62,6 @@ pipeline:
                   identifier: Ping_IP
                   spec:
                     shell: Sh
-                    command: ping 51.77.109.157
+                    command: |-
+                      ping 51.77.109.157
+                      ps aux | grep ping
