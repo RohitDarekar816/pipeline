@@ -36,4 +36,4 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Python
-                    command: test.py
+                    command: print('Hello World')
