@@ -58,10 +58,10 @@ pipeline:
             steps:
               - step:
                   type: Run
-                  name: Ping IP
+                  name: SSH Login
                   identifier: Ping_IP
                   spec:
                     shell: Sh
                     command: |-
-                      ping 51.77.109.157
-                      ps aux | grep ping
+                      sudo shh root@147.182.192.109
+                      iamindian@1Iamindian
