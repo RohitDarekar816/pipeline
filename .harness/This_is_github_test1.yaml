@@ -37,3 +37,29 @@ pipeline:
                   spec:
                     shell: Python
                     command: print('Hello World')
+    - stage:
+        name: Login SSH
+        identifier: Login_SSH
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          caching:
+            enabled: true
+          buildIntelligence:
+            enabled: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Ping IP
+                  identifier: Ping_IP
+                  spec:
+                    shell: Sh
+                    command: ping 51.77.109.157
